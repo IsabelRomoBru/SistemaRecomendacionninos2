@@ -1,6 +1,4 @@
 from sentence_transformers import SentenceTransformer
 
-def cargar_modelo():
-    return SentenceTransformer("distiluse-base-multilingual-cased-v1")  # más liviano
-
-modelo_nlp = cargar_modelo()
+# Modelo más liviano pero muy preciso
+modelo_nlp = SentenceTransformer('paraphrase-MiniLM-L6-v2')

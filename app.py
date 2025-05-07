@@ -5,10 +5,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 import os
 
+from descargar_modelo import modelo_nlp
 
-from sentence_transformers import SentenceTransformer
-
-modelo_nlp = SentenceTransformer('distiluse-base-multilingual-cased-v2')
 
 # Configuración general de la app
 st.set_page_config(
